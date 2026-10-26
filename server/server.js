@@ -5,7 +5,6 @@ const { PrismaClient } = require("@prisma/client");
 
 const app = express();
 const prisma = new PrismaClient();
-const PORT = 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -36,15 +35,14 @@ app.post("/api/contact", async (req, res) => {
       typeof message !== "string" ||
       !name.trim() ||
       !email.trim() ||
-      !subject.trim() || 
-      !message.trim()   
+      !subject.trim() ||
+      !message.trim()
     ) {
       return res.status(400).json({
         success: false,
         message: "Please fill in all fields."
       });
     }
-
 
     const contact = await prisma.contact.create({
       data: {
@@ -70,6 +68,14 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+// Local development server
+if (require.main === module) {
+  const PORT = process.env.PORT || 5000;
+
+  app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+  });
+}
+
+// Vercel ke liye Express app export
+module.exports = app;
