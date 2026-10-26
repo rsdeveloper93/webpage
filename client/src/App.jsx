@@ -29,7 +29,8 @@ const projects = [
   { title: "E-Commerce Website", type: "Web Development", img: "photo-1556742049-0cfed4f6a45d" },
   { title: "Fitness Mobile App", type: "Mobile App", img: "photo-1510017803434-a899398421b3" },
   { title: "Dashboard UI/UX", type: "UI/UX Design", img: "photo-1460925895917-afdab827c52f" },
-  { title: "Branding Identity", type: "Graphic Design", img: "photo-1634942536790-2534db6a2b3c" }
+  { title: "Branding Identity", type: "Graphic Design", img: "photo-1556742049-0cfed4f6a45d" },
+  // { title: "Branding Identity", type: "Graphic Design", img: "photo-1634942536790-2534db6a2b3c" }
 ];
 
 const articles = [
@@ -40,7 +41,7 @@ const articles = [
 ];
 
 const team = [
-  { name: "Rohit Sharma", role: "Founder & CEO", img: "photo-1500648767791-00dcc994a43e" },
+  { name: "Rohit Verma", role: "Founder & CEO", img: "photo-1500648767791-00dcc994a43e" },
   { name: "Neha Gupta", role: "Lead Designer", img: "photo-1534528741775-53994a69daeb" },
   { name: "Amit Verma", role: "Senior Developer", img: "photo-1506794778202-cad84cf45f1d" },
   { name: "Sinha Yadav", role: "Marketing Specialist", img: "photo-1544005313-94ddf0286df2" }
