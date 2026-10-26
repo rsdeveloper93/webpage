@@ -189,7 +189,7 @@ const handleContactSubmit = async (e) => {
   setFormSubmitting(true);
 
   try {
-    const response = await fetch("http://localhost:5000/api/contact", {
+    const response = await fetch("hhttps://webpage-6hq4.vercel.app/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
