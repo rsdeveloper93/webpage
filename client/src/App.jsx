@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import Register from "./Register";
 
 
 import {
@@ -109,6 +110,7 @@ function App() {
   const [testimonialIndex, setTestimonialIndex] = useState(0);
   const [faqOpen, setFaqOpen] = useState(-1);
   const [formSent, setFormSent] = useState(false);
+  const [showRegisterPopup, setShowRegisterPopup] = useState(true);
 
   const [contactForm, setContactForm] = useState({
   name: "",
@@ -870,6 +872,21 @@ const handleContactSubmit = async (e) => {
           </div>
         </div>
       </footer>
+
+      {/* Register / Login Popup */}
+      {showRegisterPopup && (
+        <div
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 p-3 sm:p-6"
+          onClick={() => setShowRegisterPopup(false)}
+        >
+          <div
+            className="w-full max-w-5xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Register onClose={() => setShowRegisterPopup(false)} />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
