@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from "react";
-import Register from "./Register";
+import Register from "./Register"
 
 
 import {
