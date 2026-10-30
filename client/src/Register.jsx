@@ -63,7 +63,7 @@ export default function Register({ onClose }) {
 
     try {
       const response = await fetch(
-        `https://webpage-6hq4.vercel.app/api/auth/${isRegister ? "register" : "login"}`,
+        `http://localhost:5000/api/auth/${isRegister ? "register" : "login"}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -162,7 +162,7 @@ export default function Register({ onClose }) {
             ))}
 
             <p className="pt-2 text-xs text-orange-100">
-              © {new Date().getFullYear()} IT Soft. All rights reserved.   
+              © {new Date().getFullYear()} IT Soft. All rights reserved.
             </p>
           </div>
         </section>
