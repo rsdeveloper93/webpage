@@ -63,7 +63,7 @@ export default function Register({ onClose }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/auth/${isRegister ? "register" : "login"}`,
+        `https://webpage-6hq4.vercel.app/api/auth/${isRegister ? "register" : "login"}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
