@@ -11,7 +11,7 @@ const prisma = new PrismaClient();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://webpage-five-rosy.vercel.app",
     credentials: true
   })
 );
