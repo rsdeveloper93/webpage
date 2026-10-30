@@ -8,7 +8,7 @@ import {
   Megaphone, Cloud, Users, Smile, Trophy, Star, CheckCircle2, Code2,
   BriefcaseBusiness, HeartHandshake, Headphones, ChevronDown, ChevronLeft,
   ChevronRight, Quote, Send
-} from "lucide-react";
+} from "lucide-react";   
 
 const services = [
   { icon: Monitor, title: "Web Development", desc: "Modern, responsive and scalable websites for your business." },
