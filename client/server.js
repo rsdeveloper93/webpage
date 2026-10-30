@@ -1,10 +1,12 @@
 
 const express = require("express");
+const cors = require("cors");
 
 const app = express();
 
 // React se aane wala JSON data read karne ke liye
 app.use(express.json());
+app.use(cors());
 
 const PORT = 5000;
 

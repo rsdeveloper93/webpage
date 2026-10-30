@@ -162,7 +162,7 @@ export default function Register({ onClose }) {
             ))}
 
             <p className="pt-2 text-xs text-orange-100">
-              © {new Date().getFullYear()} IT Soft. All rights reserved.
+              © {new Date().getFullYear()} IT Soft. All rights reserved.   
             </p>
           </div>
         </section>
