@@ -67,7 +67,7 @@ function Services() {
   const hoverCardClass = "transition-all duration-300 hover:-translate-y-2";
 
   return (
-    <section id="services" className="section-wrap min-h-screen">
+    <section id="services" className="bg-gradient-to-r from-[#fafafa] to-[#fff4ec] min-h-screen">
       <div className="mx-auto max-w-6xl px-5 py-16 lg:px-8">
         <div className={revealClass}>
           <p className="eyebrow">Our Services</p>

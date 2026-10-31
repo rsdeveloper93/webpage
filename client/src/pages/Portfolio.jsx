@@ -54,8 +54,8 @@ function Portfolio() {
     "transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl motion-reduce:transform-none";
 
   return (
-    <section id="portfolio" className="section-wrap min-h-screen !pt-2">
-      <div className="mx-auto max-w-6xl px-5 py-16 lg:px-8">
+    <section id="portfolio" className="bg-gradient-to-r from-[#fafafa] to-[#fff4ec] min-h-screen !pt-2">
+      <div className="mx-auto max-w-6xl px-5 py-6 lg:px-8">
         <div className={revealClass}>
           <p className="eyebrow">Our Work</p>
           <h1 className="mt-2 text-3xl font-extrabold md:text-4xl">

@@ -31,8 +31,8 @@ function Blog() {
     "reveal-on-scroll opacity-1 translate-y-0 transition-all duration-700 ease-out motion-reduce:transition-none";
 
   return (
-    <section id="blog" className="section-wrap min-h-screen !pt-2">
-      <div className="mx-auto max-w-6xl px-5 py-16 lg:px-8">
+    <section id="blog" className="bg-gradient-to-r from-[#fafafa] to-[#fff4ec] min-h-screen !pt-2">
+      <div className="mx-auto max-w-6xl px-5 py-12 lg:px-8">
         <div className={revealClass}>
           <p className="eyebrow">Our Blog</p>
 
